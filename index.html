@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <h1>Calculator</h1>
+
+  <div class="mini-calculator">
+    <div class="display">
+      <h4 id="display2"> </h4>
+      <h2 id="display">0</h2>
+    </div>
+
+    <div class="contol-section">
+
+      <div class="num-pad">
+        <div class="ac" onclick="ac()">AC</div>
+        <div class="backspace" onclick="backspace()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <path fill="#000000"
+              d="M9 19q-.5 0-.938-.225t-.712-.625l-3.525-5Q3.45 12.625 3.45 12t.375-1.15l3.525-5q.275-.4.713-.625T9 5h10q.825 0 1.413.588T21 7v10q0 .825-.588 1.413T19 19H9Zm10-2V7v10ZM9 17h10V7H9l-3.55 5L9 17Zm5-3.6l1.9 1.9q.275.275.7.275t.7-.275q.275-.275.275-.7t-.275-.7L15.4 12l1.9-1.9q.275-.275.275-.7t-.275-.7q-.275-.275-.7-.275t-.7.275L14 10.6l-1.9-1.9q-.275-.275-.7-.275t-.7.275q-.275.275-.275.7t.275.7l1.9 1.9l-1.9 1.9q-.275.275-.275.7t.275.7q.275.275.7.275t.7-.275l1.9-1.9Z" />
+          </svg>
+        </div>
+
+        <div class="one" onclick="addNumberToDisplay(1)">1</div>
+        <div class="two" onclick="addNumberToDisplay(2)">2</div>
+        <div class="three" onclick="addNumberToDisplay(3)">3</div>
+
+        <div class="division" onclick="operate('/')">&#247;</div>
+
+        <div class="four" onclick="addNumberToDisplay(4)">4</div>
+        <div class="five" onclick="addNumberToDisplay(5)">5</div>
+        <div class="six" onclick="addNumberToDisplay(6)">6</div>
+
+        <div class="multiplication" onclick="operate('*')">&#215;</div>
+
+        <div class="seven" onclick="addNumberToDisplay(7)">7</div>
+        <div class="eight" onclick="addNumberToDisplay(8)">8</div>
+        <div class="nine" onclick="addNumberToDisplay(9)">9</div>
+
+        <div class="subtraction" onclick="operate('-')">&#8722;</div>
+
+        <div class="decimal">.</div>
+        <div class="zero" onclick="addNumberToDisplay(0)">0</div>
+        <div class="equal" onclick="operate('=')">=</div>
+
+        <div class="addition" onclick="operate('+')">+</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

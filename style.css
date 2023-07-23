@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+.mini-calculator {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    border: 0.25rem solid black;
+    border-radius: 10px;
+
+    max-width: 15rem;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(0, 255, 0);
+    width: 100%;
+}
+
+.contol-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+}
+
+.num-pad {
+    display: grid;
+    width: 100%;
+    text-align: center;
+}
+
+.num-pad {
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+}
+
+.num-pad div {
+    font-size: 20pt;
+    background-color: aquamarine;
+    width: 100%;
+    border: rgb(0, 0, 0) solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Safari */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.ac,
+.backspace {
+    grid-column: span 2;
+}
